@@ -1,0 +1,61 @@
+/* Shared by every page: reset, the tiny pill nav, floating hearts, lightbox shell.
+   Each page also loads one theme (pastel.css or studio.css) that sets the --nav-* and --accent tokens. */
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;min-height:100vh;overflow-x:hidden;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+}
+img{max-width:100%}
+[hidden]{display:none!important}
+
+/* Tiny nav */
+.tinynav{
+  position:sticky;top:calc(12px + env(safe-area-inset-top,0px));z-index:30;
+  display:flex;gap:2px;align-items:center;width:max-content;max-width:100%;
+  margin:14px auto 0;padding:5px;border-radius:999px;
+  background:var(--nav-bg);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  box-shadow:var(--nav-shadow);
+  font-family:var(--nav-font);font-size:.88rem;font-weight:700;
+}
+.tinynav a{
+  text-decoration:none;padding:8px 14px;border-radius:999px;color:var(--nav-ink);
+  white-space:nowrap;transition:background .2s,color .2s;
+}
+.tinynav a:hover{background:var(--nav-hover)}
+.tinynav a[aria-current=page]{background:var(--nav-on);color:var(--nav-on-ink)}
+.tinynav a:focus-visible{outline:3px solid var(--nav-focus);outline-offset:2px}
+.tinynav .brand b{color:var(--accent);font-weight:800}
+.tinynav .brand[aria-current=page] b{color:inherit}
+@media (max-width:480px){
+  .tinynav{font-size:.8rem}
+  .tinynav a{padding:8px 10px}
+  .tinynav .brand .full{display:none}
+}
+
+/* Pages ease in */
+.wrap{animation:enter .6s cubic-bezier(.2,.8,.2,1) both}
+@keyframes enter{from{opacity:0;transform:translateY(14px)}}
+
+/* Floating hearts */
+.float{position:fixed;pointer-events:none;z-index:50;width:26px;height:26px;animation:up 1.4s ease-out forwards}
+@keyframes up{
+  from{opacity:1;transform:translate(0,0) scale(.6) rotate(0)}
+  to{opacity:0;transform:translate(var(--dx),-140px) scale(1.2) rotate(var(--rot))}
+}
+
+/* Lightbox shell (each theme dresses it) */
+.lightbox{
+  position:fixed;inset:0;display:grid;place-items:center;z-index:40;cursor:zoom-out;
+  padding:24px max(16px,env(safe-area-inset-right,0px)) 24px max(16px,env(safe-area-inset-left,0px));
+}
+.lightbox figure{margin:0}
+.lightbox img{display:block;width:auto;max-width:100%;margin:0 auto}
+#lbno:empty{display:none}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .wrap{animation:none}
+  .float{display:none}
+}

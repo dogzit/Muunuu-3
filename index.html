@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>You &amp; Me</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23f497b6' d='M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.1 0 3.6 1.2 4.4 2.5.8-1.3 2.3-2.5 4.4-2.5 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500;600;700&family=Gaegu:wght@400;700&family=IBM+Plex+Mono:wght@400;600&family=Nunito:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/pastel.css">
+<link rel="stylesheet" href="css/studio.css">
+</head>
+<body>
+
+<nav class="tinynav" aria-label="Pages">
+  <a class="brand" href="#home" data-nav="home"><span class="full">you </span><b>&amp;</b><span class="full"> me</span></a>
+  <a href="#scrapbook" data-nav="scrapbook">scrapbook</a>
+  <a href="#photoshoot" data-nav="photoshoot">photoshoot</a>
+  <a href="#notes" data-nav="notes">notes</a>
+</nav>
+
+<!-- ===================== Home ===================== -->
+<main class="wrap" data-view="home">
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">welcome to our tiny corner of the internet</span>
+      <h1>you <span class="amp" title="tap me">&amp;</span> me</h1>
+      <p class="sub">five favorite pictures, two little photo books, and a few notes i meant to say out loud.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#scrapbook">open the scrapbook →</a>
+        <a class="btn ghost" href="#notes">read the notes ♡</a>
+      </div>
+    </div>
+
+    <div class="stack-wrap">
+      <button class="stack" type="button" aria-label="Photo stack. Tap to shuffle to the next picture">
+        <span class="card"><img src="images/couch.jpg" alt="Cozy selfie on the couch with a peace sign"><span>couch days</span></span>
+        <span class="card"><img src="images/gum.jpg" alt="Two packs of gum, one red and one blue, in two hands"><span>matching, obviously</span></span>
+        <span class="card"><img src="images/festival.jpg" alt="Mirror selfie together at a night festival"><span>festival night</span></span>
+        <span class="card"><img src="images/plush.jpg" alt="Cheek to cheek holding a fluffy blue plush"><span>our fluffy blue son</span></span>
+        <span class="card"><img src="images/sidewalk.jpg" alt="Silly selfie together on a sunny sidewalk"><span>tongues out, perfect day</span></span>
+      </button>
+      <p class="stack-hint">tap the pile to shuffle ↻</p>
+    </div>
+  </section>
+
+  <section class="doors" aria-label="Pages">
+    <a class="door taped pink" href="#scrapbook" style="--tr:4deg">
+      <span class="peek peek-scrap" aria-hidden="true">
+        <img src="images/sidewalk.jpg" alt="">
+        <img src="images/plush.jpg" alt="">
+      </span>
+      <h2>the scrapbook</h2>
+      <p>taped polaroids, a little note, and a button for sending hearts</p>
+      <span class="go">open it →</span>
+    </a>
+    <a class="door taped blue" href="#photoshoot">
+      <span class="peek peek-studio" aria-hidden="true">
+        <span class="mini-strip">
+          <img src="images/festival.jpg" alt="">
+          <img src="images/couch.jpg" alt="">
+          <img src="images/gum.jpg" alt="">
+        </span>
+      </span>
+      <h2>the photoshoot</h2>
+      <p>a film contact sheet, a cover shot and a photobooth strip</p>
+      <span class="go">roll film →</span>
+    </a>
+    <a class="door taped" href="#notes" style="--tr:-5deg">
+      <span class="peek peek-notes" aria-hidden="true"><span class="mini-env"></span></span>
+      <h2>little notes</h2>
+      <p>our day counter, a note wall, reasons i like you, and open-when letters</p>
+      <span class="go">read them →</span>
+    </a>
+  </section>
+
+  <p class="site-foot">made with ♡ in ulaanbaatar, for my favorite person</p>
+</main>
+
+<!-- ===================== Scrapbook ===================== -->
+<main class="wrap" data-view="scrapbook" hidden>
+  <header class="page-head">
+    <span class="eyebrow">a tiny scrapbook of</span>
+    <h1>you <span class="amp" title="tap me">&amp;</span> me</h1>
+    <p class="sub">my favorite person, my favorite pictures</p>
+  </header>
+
+  <section class="board" aria-label="Photos">
+    <figure class="pol a taped pink" tabindex="0" data-zoom data-cap="tongues out, zero shame, perfect day" style="--ar:4/3;--tr:4deg">
+      <img src="images/sidewalk.jpg" alt="Silly selfie together on a sunny sidewalk">
+      <figcaption>tongues out, zero shame, perfect day<span class="date">sunny sidewalk</span></figcaption>
+      <span class="sticker s1" aria-hidden="true">♡</span>
+    </figure>
+    <figure class="pol b taped blue" tabindex="0" data-zoom data-cap="we adopted a fluffy blue son" style="--ar:4/3">
+      <img src="images/plush.jpg" alt="Cheek to cheek holding a fluffy blue plush">
+      <figcaption>we adopted a fluffy blue son<span class="date">family photo</span></figcaption>
+    </figure>
+    <figure class="pol c taped" tabindex="0" data-zoom data-cap="one red, one blue. matching, obviously" style="--ar:3/4;--tr:6deg">
+      <img src="images/gum.jpg" alt="Two packs of gum, one red and one blue, in two hands">
+      <figcaption>one red, one blue. matching, obviously<span class="date">split 50 / 50</span></figcaption>
+    </figure>
+    <figure class="pol d taped pink" tabindex="0" data-zoom data-cap="festival night, wristband still on" style="--ar:9/16;--tr:-5deg">
+      <img src="images/festival.jpg" alt="Mirror selfie together at a night festival">
+      <figcaption>festival night, wristband still on<span class="date">after dark</span></figcaption>
+    </figure>
+    <figure class="pol e taped blue" tabindex="0" data-zoom data-cap="my favorite place is right here" style="--ar:16/9">
+      <img src="images/couch.jpg" alt="Cozy selfie on the couch with a peace sign">
+      <figcaption>my favorite place is right here<span class="date">couch days</span></figcaption>
+    </figure>
+  </section>
+
+  <div class="note">
+    <p>out of everyone in the whole city,</p>
+    <p>i'm really glad it's you i get to be silly with.</p>
+    <p>more snacks, more walks, more pictures pls.</p>
+    <p class="sig">— me ♡</p>
+  </div>
+
+  <div class="tally">
+    <button class="btn" id="love" type="button">send a heart</button>
+    <span><output id="count">0</output> sent</span>
+    <span class="tally-note" id="tallyNote"></span>
+  </div>
+
+  <p class="site-foot">next page: <a href="#photoshoot">the photoshoot →</a></p>
+</main>
+
+<!-- ===================== Photoshoot ===================== -->
+<main class="wrap" data-view="photoshoot" hidden>
+  <header class="slate">
+    <h1>The <em>you&nbsp;&amp;&nbsp;me</em> session<small>starring my favorite person</small></h1>
+    <dl class="meta">
+      <dt>Roll</dt><dd>01</dd>
+      <dt>Exposures</dt><dd>5 / 5</dd>
+      <dt>Models</dt><dd>us two</dd>
+      <dt>Location</dt><dd>Ulaanbaatar</dd>
+      <dt>Status</dt><dd class="rec">rolling</dd>
+    </dl>
+  </header>
+
+  <section class="cover" aria-label="Cover shot">
+    <figure class="shot" tabindex="0" data-zoom data-cap="cover shot ♡" data-no="Frame 05 · keeper">
+      <img src="images/couch.jpg" alt="Cozy selfie on the couch with a peace sign">
+      <span class="cap">cover shot ♡</span>
+      <span class="no">FRAME 05 · KEEPER</span>
+    </figure>
+    <div class="words">
+      <span class="label">Look 01 · at home</span>
+      <h2>Soft light, matching grey, zero effort</h2>
+      <p>Director's note: no poses were planned. One peace sign, one arm around the shoulder, one perfect pout. Wrapped in a single take.</p>
+      <span class="badge">the one</span>
+    </div>
+  </section>
+
+  <section aria-label="Contact sheet">
+    <div class="sheet-head">
+      <h3>Contact sheet</h3>
+      <span class="label">tap a frame to view · circled = keepers</span>
+    </div>
+    <div class="strip-scroll">
+      <div class="strip">
+        <div class="frame" tabindex="0" data-zoom data-no="Frame 01" data-cap="tongues out, zero shame"><span class="iso">ISO 400</span><img src="images/sidewalk.jpg" alt="Silly selfie together on a sunny sidewalk"><span class="pick"></span><span class="fno">▸ 01</span></div>
+        <div class="frame" tabindex="0" data-zoom data-no="Frame 02" data-cap="we adopted a fluffy blue son"><span class="iso">ISO 400</span><img src="images/plush.jpg" alt="Cheek to cheek holding a fluffy blue plush"><span class="mark">★</span><span class="fno">▸ 02</span></div>
+        <div class="frame" tabindex="0" data-zoom data-no="Frame 03" data-cap="one red, one blue. matching, obviously"><span class="iso">ISO 400</span><img src="images/gum.jpg" alt="Two packs of gum, one red and one blue, in two hands"><span class="fno">▸ 03</span></div>
+        <div class="frame" tabindex="0" data-zoom data-no="Frame 04" data-cap="festival night, wristband still on"><span class="iso">ISO 400</span><img src="images/festival.jpg" alt="Mirror selfie together at a night festival"><span class="pick"></span><span class="fno">▸ 04</span></div>
+        <div class="frame" tabindex="0" data-zoom data-no="Frame 05" data-cap="my favorite place is right here"><span class="iso">ISO 400</span><img src="images/couch.jpg" alt="Cozy selfie on the couch with a peace sign"><span class="mark">♡</span><span class="fno">▸ 05</span></div>
+      </div>
+    </div>
+    <p class="note-line">↑ honestly every frame is a keeper</p>
+  </section>
+
+  <section class="booth" aria-label="Photobooth strip">
+    <div class="booth-strip">
+      <button type="button" data-zoom data-no="Booth shot 1 / 4" data-cap="sidewalk silliness"><img src="images/sidewalk.jpg" alt="Silly selfie on the sidewalk"></button>
+      <button type="button" data-zoom data-no="Booth shot 2 / 4" data-cap="family portrait (with son)"><img src="images/plush.jpg" alt="Selfie with the blue plush"></button>
+      <button type="button" data-zoom data-no="Booth shot 3 / 4" data-cap="festival mirror moment"><img src="images/festival.jpg" alt="Night mirror selfie"></button>
+      <button type="button" data-zoom data-no="Booth shot 4 / 4" data-cap="couch, peace, us"><img src="images/couch.jpg" alt="Couch selfie"></button>
+      <div class="stamp">you &amp; me · 4 shots</div>
+    </div>
+    <div class="booth-copy">
+      <span class="label">Look 02 · photobooth</span>
+      <h3>Four flashes, one strip</h3>
+      <p>Black and white until you hover. Then it's every color of that day again. Press the shutter for another round.</p>
+      <button class="shutter" id="shutter" type="button"><span class="dot"></span>Take another <output id="shots">· 0</output></button>
+    </div>
+  </section>
+
+  <footer>that's a wrap. <b>same time tomorrow?</b><br><a href="#notes">read the notes →</a></footer>
+</main>
+
+<!-- ===================== Notes ===================== -->
+<main class="wrap" data-view="notes" hidden>
+  <header class="page-head">
+    <span class="eyebrow">things i don't say enough</span>
+    <h1>little <span class="amp" title="tap me">♡</span> notes</h1>
+    <p class="sub">tap, flip and open everything</p>
+  </header>
+
+  <!-- data-since is the start date shown until the database has one (and on copies without a database). -->
+  <section class="counter" data-since="2026-07-28" aria-label="Days together">
+    <span class="eyebrow">we've been us for</span>
+    <p class="big"><output id="days">?</output></p>
+    <p class="unit">days <small>(and counting, obviously)</small></p>
+    <label class="pick-date">when did "us" start? <input type="date" id="since"></label>
+  </section>
+
+  <section class="notes-section" aria-labelledby="wall-title">
+    <h2 class="section-title" id="wall-title">our note wall</h2>
+    <p class="section-sub">leave a little note. it stays up for both of us</p>
+    <form class="composer" id="wallForm" hidden>
+      <label class="sr-only" for="wallText">Your note</label>
+      <textarea id="wallText" maxlength="240" rows="3" placeholder="write something sweet…" required></textarea>
+      <label class="name-field">from <input id="wallName" type="text" maxlength="40" placeholder="your name" autocomplete="nickname"></label>
+      <div class="composer-row">
+        <span class="chars"><output id="wallChars">0</output> / 240</span>
+        <button class="btn" id="wallPost" type="submit">stick it on ♡</button>
+      </div>
+    </form>
+    <p class="wall-status" id="wallStatus">loading notes…</p>
+    <ul class="wall" id="wall" aria-live="polite"></ul>
+  </section>
+
+  <section class="notes-section" aria-labelledby="reasons-title">
+    <h2 class="section-title" id="reasons-title">reasons i like you</h2>
+    <p class="section-sub">a very incomplete list. tap a card to flip it</p>
+    <div class="reasons">
+      <button class="flip" type="button" aria-pressed="false"><span class="inner"><span class="face front"><b>#1</b><i>tap</i></span><span class="face back">you make tongues-out selfies look like art</span></span></button>
+      <button class="flip" type="button" aria-pressed="false"><span class="inner"><span class="face front"><b>#2</b><i>tap</i></span><span class="face back">you said yes to adopting a fluffy blue son</span></span></button>
+      <button class="flip" type="button" aria-pressed="false"><span class="inner"><span class="face front"><b>#3</b><i>tap</i></span><span class="face back">you always split the gum 50 / 50</span></span></button>
+      <button class="flip" type="button" aria-pressed="false"><span class="inner"><span class="face front"><b>#4</b><i>tap</i></span><span class="face back">festival nights are better with you</span></span></button>
+      <button class="flip" type="button" aria-pressed="false"><span class="inner"><span class="face front"><b>#5</b><i>tap</i></span><span class="face back">the couch is my favorite place when you're on it</span></span></button>
+      <button class="flip" type="button" aria-pressed="false"><span class="inner"><span class="face front"><b>#6</b><i>tap</i></span><span class="face back">you laugh at my worst jokes</span></span></button>
+      <button class="flip" type="button" aria-pressed="false"><span class="inner"><span class="face front"><b>#7</b><i>tap</i></span><span class="face back">you make ordinary days feel like weekends</span></span></button>
+      <button class="flip" type="button" aria-pressed="false"><span class="inner"><span class="face front"><b>#8</b><i>tap</i></span><span class="face back">out of the whole city, it's you</span></span></button>
+    </div>
+  </section>
+
+  <section class="notes-section" aria-labelledby="ow-title">
+    <h2 class="section-title" id="ow-title">open when…</h2>
+    <p class="section-sub">little letters for later. or now, i won't tell</p>
+    <div class="openwhen">
+      <button class="env" type="button"><span class="paper"><span class="flap"></span><span class="seal">♥</span></span><span class="label">open when you miss me</span></button>
+      <template>
+        <h3>open when you miss me</h3>
+        <img src="images/couch.jpg" alt="Cozy selfie on the couch with a peace sign">
+        <p>here's the couch, here's us, here's proof.</p>
+        <p>i'm probably missing you right now too.</p>
+        <p>text me. i'll send a silly selfie back.</p>
+        <p class="sig">— me ♡</p>
+      </template>
+
+      <button class="env" type="button"><span class="paper"><span class="flap"></span><span class="seal">♥</span></span><span class="label">open when you've had a bad day</span></button>
+      <template>
+        <h3>open when you've had a bad day</h3>
+        <img src="images/plush.jpg" alt="Cheek to cheek holding a fluffy blue plush">
+        <p>deep breath. our fluffy blue son believes in you.</p>
+        <p>so do i. like, a lot.</p>
+        <p>snacks are on me, and i'll listen as long as you want.</p>
+        <p class="sig">— me ♡</p>
+      </template>
+
+      <button class="env" type="button"><span class="paper"><span class="flap"></span><span class="seal">♥</span></span><span class="label">open when you can't sleep</span></button>
+      <template>
+        <h3>open when you can't sleep</h3>
+        <p>count hearts instead of sheep:</p>
+        <p>one… two… i like you… three…</p>
+        <img src="images/sidewalk.jpg" alt="Silly selfie together on a sunny sidewalk">
+        <p>still awake? look at this face and try not to laugh.</p>
+        <p class="sig">— me ♡</p>
+      </template>
+    </div>
+  </section>
+
+  <p class="site-foot">that's all for now. <a href="#home">back to the start ♡</a></p>
+</main>
+
+<div class="flash" id="flash"></div>
+<div class="lightbox" id="lb" hidden><figure><img id="lbimg" alt=""><figcaption id="lbcap"></figcaption><span class="label" id="lbno"></span></figure></div>
+
+<dialog class="letter" id="letter" aria-label="Letter">
+  <div class="sheet">
+    <button class="close" id="letterClose" type="button" aria-label="Close letter">×</button>
+    <div id="letterBody"></div>
+  </div>
+</dialog>
+
+<script src="js/main.js"></script>
+</body>
+</html>

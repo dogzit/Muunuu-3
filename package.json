@@ -1,0 +1,15 @@
+{
+  "name": "you-and-me",
+  "private": true,
+  "type": "module",
+  "description": "A tiny site for us: scrapbook, photoshoot and little notes, with hearts, our start date and a note wall kept in Neon.",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.2.0"
+  }
+}
