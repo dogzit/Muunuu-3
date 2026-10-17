@@ -9,9 +9,9 @@ body.studio{
   --chalk:#ece4dc;
   --dim:#9a8d93;
   --grease:#ff4d6d;
-  --display:'Anton','Impact',sans-serif;
-  --mono:'IBM Plex Mono',ui-monospace,monospace;
-  --hand:'Caveat',cursive;
+  --display:var(--font-anton),'Impact',sans-serif;
+  --mono:var(--font-plex-mono),ui-monospace,monospace;
+  --hand:var(--font-caveat),cursive;
 
   --accent:var(--grease);
   --nav-bg:rgba(20,16,19,.86);

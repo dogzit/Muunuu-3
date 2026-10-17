@@ -1,5 +1,18 @@
-node_modules/
-.vercel/
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# env files and the local copy of the database URL
 .env*
-.DS_Store
 dbconnectionurl.txt
+
+# vercel
+.vercel
+
+# misc
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
